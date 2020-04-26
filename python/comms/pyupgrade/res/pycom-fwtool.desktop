@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Name=Pycom Firmware Tool
+Type=Application
+Comment=Pycom Firmware Update Tool
+Icon=/usr/local/share/pycom/py.png
+Exec=/usr/local/bin/pycom-fwtool
+
