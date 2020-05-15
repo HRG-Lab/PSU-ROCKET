@@ -22,10 +22,10 @@
 Adafruit_AS726x ams;
 
 //buffer to hold raw values
-uint16_t sensorValues[AS726x_NUM_CHANNELS];
+//uint16_t sensorValues[AS726x_NUM_CHANNELS];
 
 //buffer to hold calibrated values (not used by default in this example)
-//float calibratedValues[AS726x_NUM_CHANNELS];
+float calibratedValues[AS726x_NUM_CHANNELS];
 
 void setup() {
   Serial.begin(115200);
@@ -58,16 +58,16 @@ void loop() {
   //ams.drvOff(); //uncomment this if you want to use the driver LED for readings
 
   //read the values!
-  ams.readRawValues(sensorValues);
-  //ams.readCalibratedValues(calibratedValues);
+  //ams.readRawValues(sensorValues);
+  ams.readCalibratedValues(calibratedValues);
 
   Serial.print("Temp: "); Serial.print(temp);
-  Serial.print(" Violet: "); Serial.print(sensorValues[AS726x_VIOLET]);
-  Serial.print(" Blue: "); Serial.print(sensorValues[AS726x_BLUE]);
-  Serial.print(" Green: "); Serial.print(sensorValues[AS726x_GREEN]);
-  Serial.print(" Yellow: "); Serial.print(sensorValues[AS726x_YELLOW]);
-  Serial.print(" Orange: "); Serial.print(sensorValues[AS726x_ORANGE]);
-  Serial.print(" Red: "); Serial.print(sensorValues[AS726x_RED]);
+  Serial.print(" Violet: "); Serial.print(calibratedValues[AS726x_VIOLET]);
+  Serial.print(" Blue: "); Serial.print(calibratedValues[AS726x_BLUE]);
+  Serial.print(" Green: "); Serial.print(calibratedValues[AS726x_GREEN]);
+  Serial.print(" Yellow: "); Serial.print(calibratedValues[AS726x_YELLOW]);
+  Serial.print(" Orange: "); Serial.print(calibratedValues[AS726x_ORANGE]);
+  Serial.print(" Red: "); Serial.print(calibratedValues[AS726x_RED]);
   Serial.println();
   Serial.println();
 }
