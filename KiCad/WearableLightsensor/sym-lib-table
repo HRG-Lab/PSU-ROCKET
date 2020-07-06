@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name WearableLightsensor)(type Legacy)(uri ${KIPRJMOD}/WearableLightsensor.lib)(options "")(descr ""))
+  (lib (name WearableLightsensor-rescue)(type Legacy)(uri ${KIPRJMOD}/WearableLightsensor-rescue.lib)(options "")(descr ""))
 )
