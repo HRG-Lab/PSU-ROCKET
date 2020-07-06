@@ -1,4 +1,4 @@
-update=7/5/2020 8:36:35 PM
+update=7/6/2020 11:19:35 AM
 version=1
 last_client=kicad
 [general]
@@ -74,11 +74,11 @@ Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
-Type=0
+Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
-Type=0
+Type=1
 Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
@@ -237,6 +237,17 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
+Clearance=0.2
+TrackWidth=0.25
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=Signal
 Clearance=0.2
 TrackWidth=0.25
 ViaDiameter=0.8
